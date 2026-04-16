@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Body Sculpt</title>
 
-<style>
+style>
   :root{
     --gap: 20px;
     --cols: 3;
@@ -23,14 +23,20 @@
   }
 
   body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  color:var(--text);
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:var(--text);
+    padding:0px;
 
-  display:flex;
-  flex-wrap:wrap;
-  gap:var(--gap);
-  justify-content: space-around; /* also fix typo */
+    background:
+      radial-gradient(1200px 900px at 15% 10%, rgba(61,214,198,.12), transparent 55%),
+      radial-gradient(900px 700px at 85% 20%, rgba(215,180,106,.12), transparent 52%),
+      radial-gradient(900px 700px at 55% 95%, rgba(255,255,255,.06), transparent 55%),
+      linear-gradient(180deg, var(--bg0), var(--bg1));
+    display:flex;
+    flex-wrap:wrap;
+    gap:var(--gap);
+    justify-content: space-around; /* also fix typo */
 }
 
   #groupsRoot{
