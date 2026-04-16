@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Babe Sculpting</title>
+<title>Body Sculpt</title>
 
 <style>
   :root{
@@ -581,67 +581,50 @@ function defaultAppData(){
     groups: [
       {
         id: uid(),
-        name: 'Legs/Glutes',
-        img: 'https://jessicaautumn.com/wp-content/uploads/2019/06/10-Minute-Workout-For-The-Perfect-Bubble-Butt.png',
+        name: 'Legs',
+        img: '',
         exercises: [
-          { id: uid(), name:'Leg curl', img:'https://www.hoistfitness.com/cdn/shop/files/RS-2408_FINISHSIDE2_resized.png' },
-          { id: uid(), name:'Leg press', img:'https://i.ytimg.com/vi/n2ng6LCp3yk/hq720.jpg' },
-          { id: uid(), name:'Hip Spread', img:'https://blackbearfitness.co.uk/cdn/shop/files/Untitled-design33-1_cleanup.png' },
-          { id: uid(), name:'Hip Squeeze', img:'https://extremefitness.co.uk/wp-content/uploads/Untitled-design29.jpg' },
-          { id: uid(), name:'Leg Extensions', img:'https://cffstrengthequipment.com/cdn/shop/products/hoist_leg_extension_rs_1401_a.1_1024x1024.jpg' },
-          { id: uid(), name:'Booty squats', img:'https://www.shutterstock.com/image-photo/woman-training-fitness-rubber-band-260nw-2210643481.jpg' }
+          
         ]
       },
       {
         id: uid(),
         name: 'Back',
-        img: 'https://betterme.world/articles/wp-content/uploads/2023/04/shutterstock_1654270861.jpg',
+        img: '',
         exercises: [
-          { id: uid(), name:'Row (triangle)', img:'https://i.ytimg.com/vi/hxdhLPCCJQI/maxresdefault.jpg' },
-          { id: uid(), name:'Row (bar)', img:'https://i.ytimg.com/vi/9_35TQNqm7Q/hqdefault.jpg' },
-          { id: uid(), name:'Pull down (triangle)', img:'https://dungcutheduc.vn/images/close-grip-lat-pulldown.jpg' },
-          { id: uid(), name:'Pull down (bar)', img:'https://i.vimeocdn.com/video/867314588.webp' },
-          { id: uid(), name:'Face pull', img:'https://i.pinimg.com/736x/f3/68/85/f3688525e50f2814a74990a1a06b4895.jpg' },
-          { id: uid(), name:'Rear Delt Flyes', img:'https://www.buyandsellfitness.com/cdn/shop/products/Rear-Delt-Finsh_1024x1024.jpg' }
+          
         ]
       },
       {
         id: uid(),
         name: 'Biceps',
-        img: 'https://i.pinimg.com/736x/e4/fd/2e/e4fd2e34aec8c4f86e10fceb79fe1bed.jpg',
+        img: '',
         exercises: [
-          { id: uid(), name:'Hammer curl dumbbell', img:'https://julielohre.com/wp-content/uploads/2018/07/Bicep-Hammer-Curl.jpg' },
-          { id: uid(), name:'Open hand curl dumbbell', img:'https://kefl.co.uk/cdn/shop/articles/best-dumbbell-exercises-for-building-muscle-148250.jpg' },
-          { id: uid(), name:'Rope curl', img:'https://img.livestrong.com/375/cme-data/getty/d98f17ab178a4804b614028dfa95278e.jpg' },
-          { id: uid(), name:'Drag curls', img:'https://i.ytimg.com/vi/1n_2P4OR-0Q/maxresdefault.jpg' }
+        
         ]
       },
       {
         id: uid(),
         name: 'Chest',
-        img: 'https://hips.hearstapps.com/hmg-prod/images/766/articles/2017/10/benchpress-1508589156.jpg',
+        img: '',
         exercises: [
-          { id: uid(), name:'Machine chest press', img:'https://t4.ftcdn.net/jpg/03/00/96/39/360_F_300963984.jpg' },
-          { id: uid(), name:'Chest flyes', img:'https://workouthealthy.com/cdn/shop/files/BS-S2PEC.webp' }
+          
         ]
       },
       {
         id: uid(),
         name: 'Shoulders',
-        img: 'https://media.istockphoto.com/id/1370070773/photo/fitness.jpg?s=612x612&w=0&k=20&c=FjKgCTJnlLUV8V0ftf0rgsjKgUPD83hWZQURViRRBmk=',
+        img: '',
         exercises: [
-          { id: uid(), name:'Shoulder press', img:'https://vtasfitnesscentre.com/wp-content/uploads/2021/03/Dumbbell-Shoulder-Press.jpg' },
-          { id: uid(), name:'Lateral raise', img:'https://images.ctfassets.net/8urtyqugdt2l/1EG31PaEzRIWNnuW9VeXcI/29ca964acdaf4d51494ca515971093f9/tile-image-how-to-do-lateral-raises.jpg' }
+       
         ]
       },
       {
         id: uid(),
         name: 'Triceps',
-        img: 'https://t4.ftcdn.net/jpg/01/70/23/39/360_F_170233939_NAVDp5d9kTWMwthTNC3ZJiwqxrKOfdUs.jpg',
+        img: '',
         exercises: [
-          { id: uid(), name:'Rope triceps', img:'https://s3assets.skimble.com/assets/2674907/image_full.jpg' },
-          { id: uid(), name:'Triangle tricep push down', img:'https://images.squarespace-cdn.com/tricep.jpg' },
-          { id: uid(), name:'Dip Machine', img:'https://s3.amazonaws.com/prod.skimble/assets/1495083/image_iphone.jpg' }
+         
         ]
       }
     ]
@@ -1327,7 +1310,7 @@ function migrateWorkoutKeys_ExerciseRename(groupName, oldEx, newEx){
 ======================= */
 function exportData(){
   const out = {
-    meta:{ app:'Babe Sculpting', version:4, exportedAt:new Date().toISOString() },
+    meta:{ app:'Body Sculpt', version:4, exportedAt:new Date().toISOString() },
     appData: APP,
     gridCols: getGridCols(),
     workouts: {}
@@ -1441,7 +1424,7 @@ document.getElementById('importFile').onchange = e=>{
    RESET (only this app)
 ======================= */
 function resetBabeSculpting(){
-  if(!confirm('This will ERASE ALL Babe Sculpting data (groups, exercises, workout entries). Continue?')) return;
+  if(!confirm('This will ERASE ALL Body Sculpt data (groups, exercises, workout entries). Continue?')) return;
 
   Object.keys(localStorage)
     .filter(k => k.startsWith(KEY_PREFIX))
